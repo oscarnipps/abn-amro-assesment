@@ -21,4 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "abn-amro-assesment"
 include(":app")
- 
+include(":network")
+include(":database")
+include(":list-ui")
+include(":list-data")
+include(":details-ui")
+include(":details-data")
