@@ -12,7 +12,9 @@ object Dependencies {
     const val composeUiGraphics = "androidx.compose.ui:ui-graphics"
     const val composeUiTestManifest = "androidx.compose.ui:ui-test-manifest"
     const val composeToolingRuntime = "androidx.compose.runtime:runtime"
+
     const val paging3 = "androidx.paging:paging-compose:${Versions.paging3}"
+    const val pagingCommonAndroid = "androidx.paging:paging-common-android:${Versions.pagingCommonAndroid}"
 
     const val kotlinxSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinxSerialization}"
 
@@ -24,6 +26,7 @@ object Dependencies {
     const val composeJunit4UiTest =  "androidx.compose.ui:ui-test-junit4"
 
     //hilt dependencies
+    const val hiltCompose = "androidx.hilt:hilt-navigation-compose:${Versions.hiltCompose}"
     const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
     const val hiltAndroidGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
@@ -37,6 +40,7 @@ object Dependencies {
     const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
 
     //room dependencies
+    const val roomPaging = "androidx.room:room-paging:${Versions.room}"
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
     const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
@@ -54,4 +58,10 @@ object Dependencies {
     const val junitAndroid = "androidx.test.ext:junit:${Versions.junitAndroid}"
     const val androidTestCore = "androidx.test:core:${Versions.androidTestCore}"
     const val archTestCore = "androidx.arch.core:core-testing:${Versions.archTestCore}"
+
+    const val coil = "io.coil-kt:coil-compose:${Versions.coil}"
+
+    const val startUpRuntime = "androidx.startup:startup-runtime:${Versions.startUpRuntime}"
+
+
 }

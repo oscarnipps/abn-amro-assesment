@@ -7,5 +7,5 @@ import com.android.database.repo.RepoEntity
 @Dao
 interface RepoDetailsDao {
     @Query("SELECT * FROM repo WHERE id = :id ")
-    suspend fun getRemoteKey(id: String): RepoEntity
+     fun getRepoDetails(id: String): RepoEntity
 }

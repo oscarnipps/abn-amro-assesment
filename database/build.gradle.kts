@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("dagger.hilt.android.plugin")
     kotlin("kapt")
@@ -36,15 +36,11 @@ android {
 dependencies {
     api(Dependencies.roomKtx)
     api(Dependencies.roomRuntime)
+    api(Dependencies.roomPaging)
     kapt(Dependencies.roomCompiler)
 
     implementation(Dependencies.hiltAndroid)
     kapt(Dependencies.hiltCompiler)
-
-    api(Dependencies.pagingCommonAndroid)
-
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-
-    androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation(Dependencies.junit)
+    androidTestImplementation(Dependencies.junitAndroid)
 }
