@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repo_list_app_bar_title">Repo List</string>
+    <string name="error_message_getting_extra_repo_list_items">could not get new repos</string>
+    <string name="content_description_repo_image">repo image</string>
+</resources>
