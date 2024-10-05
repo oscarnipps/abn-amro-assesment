@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repo_details_app_bar_title">Repo Details\t</string>
+    <string name="content_description_navigate_back">Back</string>
+    <string name="detail_name_title">Name</string>
+    <string name="detail_full_name_title">Full Name</string>
+    <string name="detail_description_title">Description</string>
+    <string name="detail_visibility_title">Visibility</string>
+    <string name="detail_repo_private_title">Repo Private</string>
+    <string name="view_github_profile">View Github Profile</string>
+</resources>

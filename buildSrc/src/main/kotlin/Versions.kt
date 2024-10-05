@@ -1,7 +1,7 @@
 object Versions {
     const val kotlin = "1.9.21"
     const val androidxCoreKtx = "1.13.1"
-    const val junit = "4.13.2"
+    const val junit = "4.12"
     const val junitAndroid = "1.2.1"
     const val composeBom = "2024.09.00"
     const val composeViewModel = "2.8.5"
@@ -21,7 +21,7 @@ object Versions {
     const val mockk = "1.13.9"
     const val hiltTesting = "2.44"
     const val androidTestCore = "1.6.1"
-    const val archTestCore = "2.2.0"
+    const val archTestCore = "2.1.0"
     const val startUpRuntime = "1.1.0"
     const val turbine = "0.8.0"
     const val hilt = "2.48"
