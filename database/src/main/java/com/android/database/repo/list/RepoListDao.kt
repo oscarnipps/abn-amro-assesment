@@ -13,8 +13,8 @@ interface RepoListDao {
     fun getRepos() : PagingSource<Int, RepoEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addRepos(repos : List<RepoEntity>)
+     fun addRepos(repos : List<RepoEntity>)
 
     @Query("DELETE FROM repo")
-    suspend fun deleteRepos()
+     fun deleteRepos()
 }
