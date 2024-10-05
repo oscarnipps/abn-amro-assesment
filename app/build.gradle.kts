@@ -43,7 +43,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.7"
     }
     packaging {
         resources {
@@ -53,6 +53,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":list-ui"))
+    implementation(project(":details-ui"))
+
     implementation(platform(Dependencies.composeBom))
     androidTestImplementation(platform(Dependencies.composeBom))
     implementation(Dependencies.composeUI)
@@ -71,19 +74,13 @@ dependencies {
     implementation(Dependencies.kotlinxSerialization)
 
     implementation(Dependencies.androidxCoreKtx)
+
+    implementation(Dependencies.startUpRuntime)
     implementation(Dependencies.androidxLifecycleRuntime)
 
     implementation(Dependencies.hiltAndroid)
     kapt(Dependencies.hiltCompiler)
 
-    implementation(Dependencies.roomKtx)
-    implementation(Dependencies.roomRuntime)
-    kapt(Dependencies.roomCompiler)
-
-    implementation(Dependencies.retrofit)
-    implementation(Dependencies.okHttp)
-    implementation(Dependencies.okHttpLoggingInterceptor)
-    implementation(Dependencies.gsonConverter)
 
     testImplementation(Dependencies.junit)
     testImplementation(Dependencies.junitAndroid)
